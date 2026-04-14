@@ -3,12 +3,11 @@ import java.util.Scanner;
 public class Main_18 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         // Inisialisasi data mahasiswa sesuai tabel 
         Mahasiswa_18[] daftarMhs = {
-            new Mahasiswa_18("22001", "Andi", "Teknik Informatika"),
-            new Mahasiswa_18("22002", "Budi", "Teknik Informatika"),
-            new Mahasiswa_18("22003", "Citra", "Sistem Informasi Bisnis")
+            new Mahasiswa_18("25001", "dika", "Sistem Informasi Bisnis"),
+            new Mahasiswa_18("25002", "nanas", "teknik informatika"),
+            new Mahasiswa_18("25003", "repi", "Sistem Informasi Bisnis")
         };
 
         // Inisialisasi data buku sesuai tabel 
@@ -16,10 +15,10 @@ public class Main_18 {
             new Buku_18("B001", "Algoritma", 2020),
             new Buku_18("B002", "Basis Data", 2019),
             new Buku_18("B003", "Pemrograman", 2021),
-            new Buku_18("B004", "Fisika", 2024)
+            new Buku_18("B004", "bisnis", 2024)
         };
 
-        // Inisialisasi data peminjaman (Array of Objects) [cite: 61]
+        // Inisialisasi data peminjaman (Array of Objects)
         Peminjaman_18[] pinjam = {
             new Peminjaman_18(daftarMhs[0], daftarBuku[0], 7),
             new Peminjaman_18(daftarMhs[1], daftarBuku[1], 3),
@@ -30,7 +29,7 @@ public class Main_18 {
 
         int pilihan;
         do {
-            // Menu Utama [cite: 65-71]
+            // Menu Utama 
             System.out.println("\n=== SISTEM PEMINJAMAN RUANG BACA JTI ===");
             System.out.println("1. Tampilkan Mahasiswa");
             System.out.println("2. Tampilkan Buku");
@@ -56,7 +55,7 @@ public class Main_18 {
                     for (Peminjaman_18 p : pinjam) p.tampilPeminjaman();
                     break;
                 case 4:
-                    // Implementasi Selection Sort (Denda Terbesar) [cite: 21, 156]
+                    // Implementasi Selection Sort (Denda Terbesar)
                     for (int i = 0; i < pinjam.length - 1; i++) {
                         int idxMax = i;
                         for (int j = i + 1; j < pinjam.length; j++) {
@@ -72,7 +71,7 @@ public class Main_18 {
                     for (Peminjaman_18 p : pinjam) p.tampilPeminjaman();
                     break;
                 case 5:
-                    // Implementasi Sequential Search berdasarkan NIM [cite: 22, 156]
+                    // Implementasi Sequential Search berdasarkan NIM
                     System.out.print("Masukkan NIM: ");
                     String cariNim = sc.nextLine();
                     boolean ditemukan = false;
