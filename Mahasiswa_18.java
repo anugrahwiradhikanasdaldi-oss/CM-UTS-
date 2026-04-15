@@ -1,7 +1,7 @@
 public class Mahasiswa_18 {
     String nim, nama, prodi;
 
-    // Konstruktor sesuai 
+    // Konstruktor sesuai class diagram
     public Mahasiswa_18(String nim, String nama, String prodi) {
         this.nim = nim;
         this.nama = nama;
