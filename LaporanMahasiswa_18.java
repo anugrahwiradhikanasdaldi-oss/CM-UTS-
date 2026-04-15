@@ -23,9 +23,10 @@ public class LaporanMahasiswa_18 {
         }
     }
     // Method untuk menampilkan laporan mahasiswa
-    public void tampilLaporan() {
-        System.out.println("NIM: " + mahasiswa.nim + " | Nama: " + mahasiswa.nama + 
-            " | Total Pinjam: " + totalPinjam + " | Total Denda: Rp " + totalDenda + 
-            " | Terlambat: " + totalTerlambat + "x");
+    public void tampilLaporan(){
+        System.out.println("Laporan Mahasiswa: " + mahasiswa.nama + " (NIM: " + mahasiswa.nim + ")");
+        System.out.println("Total Peminjaman: " + totalPinjam);
+        System.out.println("Total Denda: " + totalDenda);
+        System.out.println("Total Terlambat: " + totalTerlambat);
     }
 }
